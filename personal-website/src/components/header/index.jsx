@@ -1,21 +1,21 @@
 import { useState, useContext } from 'react';
-import './index.css';
 import HamburgerIcon from '../hamburguer-icon';
 import CloseIcon from '../close-icon';
 import sunIcon from '../../assets/sun.png';
 import moonIcon from '../../assets/moon.png';
 import { ThemeContext } from '../../contexts/themeContext';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import './index.css';
 
 const Nav = ({ device }) => {
   return (
     <nav className={`nav-${device}`}>
       <ul className="nav-links">
         <li>
-          <NavLink to="/sobre" >Sobre</NavLink>
+          <NavLink to="/sobre">Sobre</NavLink>
         </li>
         <li>
-          <NavLink to="/projetos" >Projetos</NavLink>
+          <NavLink to="/projetos">Projetos</NavLink>
         </li>
       </ul>
     </nav>
@@ -25,29 +25,31 @@ const Nav = ({ device }) => {
 const Header = () => {
   const [hamburgerToggle, setHamburgerToggle] = useState(false);
   const { theme, toggleTheme } = useContext(ThemeContext);
-  const navigate = useNavigate();
 
   return (
     <header>
-
       <div className="toggle-theme-container">
-      <div className="logo" onClick={() => navigate('/')}>
-        Crismael Bastos
-      </div>
-      <img
-          className={`theme-icon icon ${theme === 'theme-dark' ? 'hidden' : ''}`}
+        <NavLink className={'link-logo'} to='/personal-website/'>
+          <div className="logo">Crismael Bastos</div>
+        </NavLink>
+        <img
+          className={`theme-icon invert-color ${
+            theme === 'theme-dark' ? 'hidden' : ''
+          }`}
           src={moonIcon}
           onClick={toggleTheme}
         />
         <img
-          className={`theme-icon icon ${theme !== 'theme-dark' ? 'hidden' : ''}`}
+          className={`theme-icon invert-color ${
+            theme !== 'theme-dark' ? 'hidden' : ''
+          }`}
           src={sunIcon}
           onClick={toggleTheme}
         />
       </div>
       <HamburgerIcon
         theme={theme}
-        className={`hamburger-icon icon ${hamburgerToggle ? 'hidden' : ''}`}
+        className={`hamburger-icon invert-color ${hamburgerToggle ? 'hidden' : ''}`}
         onClick={() => {
           setHamburgerToggle(true);
         }}

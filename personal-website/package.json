@@ -1,5 +1,5 @@
 {
-  "homepage": "https://crismael-bastos.github.io/personal-website/",
+  "homepage": "/personal-website/",
   "name": "personal-website",
   "private": true,
   "version": "0.0.0",
@@ -16,7 +16,7 @@
     "axios": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^6.0.7"
+    "react-query": "^3.39.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

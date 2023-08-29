@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Header from './components/header';
-import Avatar from './components/avatar';
 import Home from './pages/home';
 import Layout from './hocs/layout';
 import { useContext } from 'react';
@@ -19,7 +17,7 @@ function App() {
       <Router>
         <Routes>
           <Route element={<Layout />}>
-            <Route path="/" element={<Home />} />
+            <Route path="/personal-website/" element={<Home />} />
             <Route path="/sobre" element={<About />} />
             <Route path="/projetos" element={<Projects />} />
           </Route>

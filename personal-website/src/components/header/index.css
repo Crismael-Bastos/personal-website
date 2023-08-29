@@ -12,7 +12,6 @@ header {
   font-weight: 400;
   cursor: pointer;
   color: var(--text-color-light);
-
 }
 
 .hamburger-icon,
@@ -78,8 +77,7 @@ header {
   cursor: pointer;
 }
 
-
-.toggle-theme-container{
+.toggle-theme-container {
   display: flex;
   align-items: center;
 }
@@ -88,6 +86,9 @@ header {
   text-decoration: underline !important;
 }
 
+.link-logo {
+  text-decoration: none !important;
+}
 /* responsive pc */
 @media screen and (min-width: 700px) {
   .logo {

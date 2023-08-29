@@ -27,14 +27,21 @@ export default function Home() {
           />
 
           <img
-            onClick={() => handleClick('https://www.linkedin.com/in/crismael-bastos-b6a48a12a/')}
+            onClick={() =>
+              handleClick(
+                'https://www.linkedin.com/in/crismael-bastos-b6a48a12a/'
+              )
+            }
             className="social-icon icon"
             src={linkedinIcon}
             alt="linkedin icon"
           />
           <img
-          onClick={()=> handleClick('mailto:crismaelnogueira.dev@gmail.com')} 
-          className="social-icon icon" src={emailIcon} alt="email icon" />
+            onClick={() => handleClick('mailto:crismaelnogueira.dev@gmail.com')}
+            className="social-icon icon"
+            src={emailIcon}
+            alt="email icon"
+          />
         </div>
       </section>
     </div>

@@ -1,13 +1,20 @@
 import './index.css';
+import { useQuery } from 'react-query';
+import { useApi } from '../../hooks/useApi';
 
-
+const api = useApi();
 export default function Avatar(props) {
-  return (
-    <div {...props}>
-      <img
-        className="avatar-img"
-        src="https://avatars.githubusercontent.com/u/84541512?v=4"
-      />
-    </div>
-  );
+  const { data, isLoading } = useQuery('api', () => api.getData());
+
+  if (!isLoading) {
+    return (
+      <div {...props}>
+        <img
+          className="avatar-img"
+          src={data.avatar_url}
+        />
+      </div>
+    );
+  }
+
 }

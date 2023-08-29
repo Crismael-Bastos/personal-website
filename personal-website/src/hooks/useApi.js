@@ -8,9 +8,9 @@ export const api = axios.create({
 });
 
 export const useApi = () => ({
-    getAvatar: async () => {
+    getData: async () => {
       const response = await api.get()
-      return response;
+      return response.data;
     },
    
   });
