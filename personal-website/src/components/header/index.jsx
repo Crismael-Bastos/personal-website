@@ -12,10 +12,10 @@ const Nav = ({ device }) => {
     <nav className={`nav-${device}`}>
       <ul className="nav-links">
         <li>
-          <NavLink to="/sobre">Sobre</NavLink>
+          <NavLink to="/personal-website/sobre">Sobre</NavLink>
         </li>
         <li>
-          <NavLink to="/projetos">Projetos</NavLink>
+          <NavLink to="/personal-website/projetos">Projetos</NavLink>
         </li>
       </ul>
     </nav>

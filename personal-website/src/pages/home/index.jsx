@@ -15,7 +15,7 @@ export default function Home() {
         <div>
           <p>olá, eu sou</p>
           <h1>Crismael Bastos</h1>
-          <p>Desenvolvedor Backend</p>
+          <p>Desenvolvedor Web</p>
         </div>
 
         <div className="social-container">
