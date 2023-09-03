@@ -12,10 +12,10 @@ const Nav = ({ device }) => {
     <nav className={`nav-${device}`}>
       <ul className="nav-links">
         <li>
-          <NavLink to="/personal-website/sobre">Sobre</NavLink>
+          <NavLink to="/sobre">Sobre</NavLink>
         </li>
         <li>
-          <NavLink to="/personal-website/projetos">Projetos</NavLink>
+          <NavLink to="/projetos">Projetos</NavLink>
         </li>
       </ul>
     </nav>
@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <header>
       <div className="toggle-theme-container">
-        <NavLink className={'link-logo'} to='/personal-website/'>
+        <NavLink className={'link-logo'} to='/'>
           <div className="logo">Crismael Bastos</div>
         </NavLink>
         <img

@@ -21,7 +21,7 @@ export default function Home() {
         <div className="social-container">
           <img
             onClick={() => handleClick('https://github.com/Crismael-Bastos/')}
-            className="social-icon icon"
+            className="social-icon invert-color"
             src={githubimage}
             alt="github icon"
           />
@@ -32,13 +32,13 @@ export default function Home() {
                 'https://www.linkedin.com/in/crismael-bastos-b6a48a12a/'
               )
             }
-            className="social-icon icon"
+            className="social-icon invert-color"
             src={linkedinIcon}
             alt="linkedin icon"
           />
           <img
             onClick={() => handleClick('mailto:crismaelnogueira.dev@gmail.com')}
-            className="social-icon icon"
+            className="social-icon invert-color"
             src={emailIcon}
             alt="email icon"
           />
